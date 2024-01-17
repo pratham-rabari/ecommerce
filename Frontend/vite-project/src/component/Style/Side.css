@@ -1,0 +1,118 @@
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #000000;
+    transition: 0.5s;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
+  
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+  
+  .cursor{
+    cursor: pointer;
+    color: white;
+  }
+  .contenir{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.search{
+    /* box-shadow:0px 0px 20px 1px #ffffff ; */
+    border: 0;
+    border-radius: 30px 0 0 30px;
+    /* padding: 0 10px 0 10px; */
+    text-align: center;
+    color: black;
+    height: 50px;
+    width: 500px;
+    font-size: 25px;
+    font-weight: 1000;
+}
+.search::selection{
+background-color: red;
+color: white;
+}
+.search:focus{
+border: 0;
+outline: 0;
+}
+.search:hover{
+cursor: text;
+}
+
+
+.search-btn{
+  transition: 0.2s ease-in-out;
+  border: 0;
+  border-radius: 0 30px 30px 0;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  color: black;
+  position: relative;
+  background-color: #ef629f;
+  height: 50px;
+  width: 100px;
+  font-size: 25px;
+  font-weight: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn:hover{
+transition: 0.2s ease-in-out;
+background-color: rgb(246, 146, 234);
+box-shadow:0px 0px 20px 1px rgb(90, 51, 85) ;
+font-size: 30px;
+font-weight: 800;
+cursor: pointer;
+}
+
+.btpop{
+  display: none;
+}
+
+@media (max-width:500px){
+.dnone{
+  display: none;
+}
+.btpop{
+  display: block;
+}
+}
