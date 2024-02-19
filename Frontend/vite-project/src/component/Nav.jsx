@@ -27,12 +27,6 @@ const Nav = () => {
     </div>
   </div>
   <div className='d-flex'>
-    <Link to="/Login">
-    <button className='btn btn-info mx-3'>{User?"Logout":"Login"}</button>
-    </Link>
-    {/* <Link to="/Profile">
-    <span><img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" className='cart mx-2'/></span>
-    </Link> */}
     <Link to="/Cart">
     <span><img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" className='cart mx-3'/></span>
     </Link>
