@@ -13,7 +13,7 @@ const Cart = () => {
   const [yes, setYes] = useState(true)
 
   const dp = JSON.parse(localStorage.getItem("newp"))
-  const total = dp.reduce((total, item) => total + item.product.price, 0)
+  const total = dp?dp.reduce((total, item) => total + item.product.price, 0):""
 
   const dispatch = useDispatch()
 
@@ -31,7 +31,7 @@ const Cart = () => {
       setYes(false)
       setSave(JSON.parse(localStorage.getItem("newp")))
     }
-  }, [save,yes])
+  }, [save, yes])
 
   return (
     <div className='row'>
@@ -82,7 +82,7 @@ const Cart = () => {
                       <td className="border-0 align-middle"><strong>{item.product.price}$</strong></td>
                       <td className="border-0 align-middle"><strong>1</strong></td>
                       <td className="border-0 align-middle"><a href="#" className="text-dark"><i className="fa fa-trash"></i></a></td>
-                      <td className="border-0 align-middle"><img src="https://cdn-icons-png.flaticon.com/128/6861/6861362.png" className='icon' onClick={() => {dele(item.product.id) }} /></td>
+                      <td className="border-0 align-middle"><img src="https://cdn-icons-png.flaticon.com/128/6861/6861362.png" className='icon' onClick={() => { dele(item.product.id) }} /></td>
                     </tr>
                     <hr />
                   </>
