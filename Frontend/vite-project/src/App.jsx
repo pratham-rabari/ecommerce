@@ -4,8 +4,8 @@ import Nav from './component/Nav'
 import Cart from './component/Cart'
 import Detail from "./component/Detail"
 import Profile from "./component/Profile"
-import Create from "./component/Create"
-import Login from "./component/Login"
+// import Create from "./component/Create"
+// import Login from "./component/Login"
 import Footer from './component/Footer'
 
 
@@ -22,8 +22,8 @@ function App() {
 <Route path="/Product" element={<Product/>}/>
 <Route path="/Cart" element={<Cart/>}/>
 <Route path="/Profile" element={<Profile/>}/>
-<Route path="/sign" element={<Create/>}/>
-<Route path="/Login" element={<Login/>}/>
+{/* <Route path="/sign" element={<Create/>}/>
+<Route path="/Login" element={<Login/>}/> */}
 
 <Route path="/Detail/:id" element={<Detail style={{backgroundColor:"white"}}/>}/>
       </Routes>
