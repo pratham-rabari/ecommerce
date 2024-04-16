@@ -104,6 +104,9 @@ font-weight: 800;
 cursor: pointer;
 }
 
+.cardbox{
+  z-index: 0;
+}
 .btpop{
   display: none;
 }

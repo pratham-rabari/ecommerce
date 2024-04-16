@@ -11,13 +11,10 @@ const Detail = () => {
  const[show,setShow]=useState(false)
 
 const {id} = useParams()
-console.log(id)
 
 const data = async()=>{
 const res = await axios.get(`https://dummyjson.com/products/${id}`)
-console.log(res.data)
 setDetail(res.data)
-console.log("detd",detail)
 }
 const dispatch = useDispatch()
 const exist = useSelector((state)=>state.add.carts)

@@ -21,7 +21,6 @@ const Product = () => {
   }
   const [card, setCard] = useState([])
 
-  // const state =useSelector((state) => state.add.title)
   const fetch = async () => {
     if (input === "") {
       const res = await axios.get(`https://dummyjson.com/products?limit=100`)
@@ -44,11 +43,6 @@ const Product = () => {
 
   useEffect(() => {
     setFil(itemm)
-    if (itemm.length === 0) {
-      console.log("no found")
-
-    }
-
   }, [search])
 
   const exist = useSelector((state) => state.add.carts)
@@ -70,7 +64,6 @@ const Product = () => {
   }
   return (
     <>
-      {/* <input placeholder='seatch' className='text-center' value={search} onChange={(e)=>{setSearch(e.target.value)}}/> */}
       <div className='row'>
         <div className='col-md-2 dnone' style={{ display: active ? "block" : "", zIndex: active ? "1" : "" }}>
           <div className="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">

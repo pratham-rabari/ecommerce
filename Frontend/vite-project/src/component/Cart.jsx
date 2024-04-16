@@ -13,7 +13,7 @@ const Cart = () => {
   const [yes, setYes] = useState(true)
 
   const dp = JSON.parse(localStorage.getItem("newp"))
-  const total = dp?dp.reduce((total, item) => total + item.product.price, 0):""
+  const total = dp ? dp.reduce((total, item) => total + item.product.price, 0) : ""
 
   const dispatch = useDispatch()
 
